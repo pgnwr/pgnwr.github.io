@@ -11,6 +11,7 @@ import Crew from './pages/block/Crew.vue'
 </script>
 
 <template>
+    <div class="crt"></div>
     <div id="page">
     <Header/>
     <Logo/>
