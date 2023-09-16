@@ -1,95 +1,164 @@
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
 
-    :root {
-     --vp-c-default-1: var(--vp-c-gray-1);
-     --vp-c-default-2: var(--vp-c-gray-2);
-     --vp-c-default-3: var(--vp-c-gray-3);
-     --vp-c-default-soft: var(--vp-c-gray-soft);
-   
-     --vp-c-brand-1: var(--vp-c-indigo-1);
-     --vp-c-brand-2: var(--vp-c-indigo-2);
-     --vp-c-brand-3: var(--vp-c-indigo-3);
-     --vp-c-brand-soft: var(--vp-c-indigo-soft);
-   
-     --vp-c-tip-1: var(--vp-c-brand-1);
-     --vp-c-tip-2: var(--vp-c-brand-2);
-     --vp-c-tip-3: var(--vp-c-brand-3);
-     --vp-c-tip-soft: var(--vp-c-brand-soft);
-   
-     --vp-c-warning-1: var(--vp-c-yellow-1);
-     --vp-c-warning-2: var(--vp-c-yellow-2);
-     --vp-c-warning-3: var(--vp-c-yellow-3);
-     --vp-c-warning-soft: var(--vp-c-yellow-soft);
-   
-     --vp-c-danger-1: var(--vp-c-red-1);
-     --vp-c-danger-2: var(--vp-c-red-2);
-     --vp-c-danger-3: var(--vp-c-red-3);
-     --vp-c-danger-soft: var(--vp-c-red-soft);
-   }
-   
-   /**
-    * Component: Button
-    * -------------------------------------------------------------------------- */
-   
-   :root {
-     --vp-button-brand-border: transparent;
-     --vp-button-brand-text: var(--vp-c-white);
-     --vp-button-brand-bg: var(--vp-c-brand-3);
-     --vp-button-brand-hover-border: transparent;
-     --vp-button-brand-hover-text: var(--vp-c-white);
-     --vp-button-brand-hover-bg: var(--vp-c-brand-2);
-     --vp-button-brand-active-border: transparent;
-     --vp-button-brand-active-text: var(--vp-c-white);
-     --vp-button-brand-active-bg: var(--vp-c-brand-1);
-   }
-   
-   /**
-    * Component: Home
-    * -------------------------------------------------------------------------- */
-   
-   :root {
-     --vp-home-hero-name-color: transparent;
-     --vp-home-hero-name-background: -webkit-linear-gradient(
-       120deg,
-       #bd34fe 30%,
-       #41d1ff
-     );
-   
-     --vp-home-hero-image-background-image: linear-gradient(
-       -45deg,
-       #bd34fe 50%,
-       #47caff 50%
-     );
-     --vp-home-hero-image-filter: blur(40px);
-   }
-   
-   @media (min-width: 640px) {
-     :root {
-       --vp-home-hero-image-filter: blur(56px);
-     }
-   }
-   
-   @media (min-width: 960px) {
-     :root {
-       --vp-home-hero-image-filter: blur(72px);
-     }
-   }
-   
-   /**
-    * Component: Custom Block
-    * -------------------------------------------------------------------------- */
-   
-   :root {
-     --vp-custom-block-tip-border: transparent;
-     --vp-custom-block-tip-text: var(--vp-c-text-1);
-     --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
-     --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
-   }
-   
-   /**
-    * Component: Algolia
-    * -------------------------------------------------------------------------- */
-   
-   .DocSearch {
-     --docsearch-primary-color: var(--vp-c-brand-1) !important;
-   }
+/* @supports (font-variation-settings: normal) {
+  html { font-family: 'Fira Code VF', monospace; }
+} */
+
+html, #app {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Fira Code', monospace;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* 
+      RESURRECT 64 Color Scheme
+      Created by Kerrie Lake 
+
+      extracted from 
+      https://lospec.com/pixel-editor/
+    */
+    --res64-dark-grey-900: #2e222f;
+    --res64-dark-grey-700: #3e3546;
+    --res64-dark-grey-500: #625565;
+    --res64-dark-grey-300: #966c6c;
+    --res64-dark-grey-100: #ab947a;
+
+    --res64-grey-900: #694f62;
+    --res64-grey-700: #7f708a;
+    --res64-grey-500: #9babb2;
+    --res64-grey-300: #c7dcd0;
+    --res64-grey-100: #ffffff;
+
+    --res64-red-900: #6e2727;
+    --res64-red-700: #b33831;
+    --res64-red-500: #ea4f36;
+    --res64-red-300: #f57d4a;
+
+    --res64-orange-900: #ae2334;
+    --res64-orange-700: #e83b3b;
+    --res64-orange-500: #fb6b1d;
+    --res64-orange-300: #f79617;
+    --res64-orange-100: #f9c22b;
+
+    --res64-dark-orange-900: #7a3045;
+    --res64-dark-orange-700: #9e4539;
+    --res64-dark-orange-500: #cd683d;
+    --res64-dark-orange-300: #e6904e;
+    --res64-dark-orange-100: #fbb954;
+
+    --res64-yellow-900: #4c3e24;
+    --res64-yellow-700: #676633;
+    --res64-yellow-500: #a2a947;
+    --res64-yellow-300: #d5e04b;
+    --res64-yellow-100: #fbff86;
+
+    --res64-green-900: #165a4c;
+    --res64-green-700: #239063;
+    --res64-green-500: #1ebc73;
+    --res64-green-300: #91db69;
+    --res64-green-100: #cddf6c;
+
+    --res64-dark-green-900: #313638;
+    --res64-dark-green-700: #374e4a;
+    --res64-dark-green-500: #547e64;
+    --res64-dark-green-300: #92a984;
+    --res64-dark-green-100: #b2ba90;
+
+    --res64-teal-900: #0b5e65;
+    --res64-teal-700: #0b8a8f;
+    --res64-teal-500: #0eaf9b;
+    --res64-teal-300: #30e1b9;
+    --res64-teal-100: #8ff8e2;
+
+    --res64-blue-900: #323353;
+    --res64-blue-700: #484a77;
+    --res64-blue-500: #4d65b4;
+    --res64-blue-300: #4d9be6;
+    --res64-blue-100: #8fd3ff;
+
+    --res64-purple-900: #45293f;
+    --res64-purple-700: #6b3e75;
+    --res64-purple-500: #905ea9;
+    --res64-purple-300: #a884f3;
+    --res64-purple-100: #eaaded;
+
+    --res64-dark-pink-900: #753c54;
+    --res64-dark-pink-700: #a24b6f;
+    --res64-dark-pink-500: #cf657f;
+    --res64-dark-pink-300: #ed8099;
+
+    --res64-pink-900: #831c5d;
+    --res64-pink-700: #c32454;
+    --res64-pink-500: #f04f78;
+    --res64-pink-400: #f68181;
+    --res64-pink-200: #fca790;
+    --res64-pink-100: #fdcbb0;
+    
+    
+    --pgnwr-fg-box: var(--res64-orange-500);
+    --pgnwr-fg-logo: var(--res64-orange-300);
+    --pgnwr-fg-alt: var(--res64-purple-300);
+    --pgnwr-bg-page: var(--res64-dark-grey-900);
+    --pgnwr-bg-body: #141314;
+    --pgnwr-bg-header: var(--res64-dark-grey-900);
+  }
   
+.row {
+    display: flex;
+    flex-flow: row;
+}
+.col {
+    display: flex;
+    flex-flow: column;
+}
+
+body {
+    background-color: var(--pgnwr-bg-body);
+}  
+
+#app {
+    align-content: center;
+    
+}
+
+#page {
+    margin: auto;
+    width: clamp(320px, 100%, 960px);
+    font-size: min(1.935485vw, 18.58px);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    white-space: nowrap;
+    overflow-x:hidden;
+    background-color: var(--pgnwr-bg-page);
+}
+
+span.box{
+    color: var(--pgnwr-fg-box);
+}
+
+#header {
+    .nav {
+        text-align: right;
+        > a{
+            color: var(--pgnwr-fg-logo);
+        }
+        > a:visited{
+            
+            color: var(--res64-red-700);
+        }
+        font-weight: 500;
+    }
+    background-color: var(--pgnwr-bg-header);
+}
+
+#logo {
+    font-weight: 400;
+    color: var(--pgnwr-fg-logo);
+}
