@@ -1,115 +1,95 @@
-@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
-
-/* @supports (font-variation-settings: normal) {
-  html { font-family: 'Fira Code VF', monospace; }
-} */
-
-html, #app {
-    width: 100vw;
-    height: 100vh;
-    font-family: 'Fira Code', monospace;
-    font-size: clamp(8px, 1.9vw, 18px); 
+@font-face {
+  font-family: 'haxorville';
+  src:
+    /* url('assets/fonts/FSEX302.ttf') format('truetype'); */
+    /* url('assets/fonts/CozetteVector.otf') format('truetype'); */
+    /* url('assets/fonts/Moder DOS 437 Win.ttf') format('truetype'); */
+      url('assets/fonts/Fairfax.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  /* font-display: block; */
+  font-display: swap;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
 
 :root {
-    /* 
-      RESURRECT 64 Color Scheme
-      Created by Kerrie Lake 
+  /* https://lospec.com/palette-list/2-bit-matrix */
+    --pgnwr-background: #0d1a1a;
+    --pgnwr-main: #add9bc;
+    --pgnwr-bright: #f2fff2;
+    --pgnwr-dark: #5b8c7c;
+}
 
-      extracted from 
-      https://lospec.com/pixel-editor/
-    */
-    --res64-dark-grey-900: #2e222f;
-    --res64-dark-grey-700: #3e3546;
-    --res64-dark-grey-500: #625565;
-    --res64-dark-grey-300: #966c6c;
-    --res64-dark-grey-100: #ab947a;
+html, body, #app{
+  margin: 0;
+  padding: 0;
+  background-color: var(--pgnwr-background);
+  font-family: 'haxorville', monospace;
+  line-height: 1.2;
+  letter-spacing: -0.001px;
+  word-spacing: -0.001px;
+  font-variant-ligatures: none;
+  white-space: nowrap;
+  text-indent: -0.001px;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  text-justify: none;
+  text-orientation: sideways-right;
+  text-transform: full-width;
+  white-space-collapse: preserve;
+  white-space: nowrap;
+  visibility: visible;
+  font-kerning: none;
+  font-optical-sizing: none;
+  font-smooth: never;
+  font-stretch: condensed;
+  font-synthesis: none;
+  font-synthesis-weight: none;
+  font-variant: font-variant-position;
+  font-weight: 400;
+  gap: 0;
+  hanging-punctuation: none;
+  hyphens: none;
+}
 
-    --res64-grey-900: #694f62;
-    --res64-grey-700: #7f708a;
-    --res64-grey-500: #9babb2;
-    --res64-grey-300: #c7dcd0;
-    --res64-grey-100: #ffffff;
+#app {
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
-    --res64-red-900: #6e2727;
-    --res64-red-700: #b33831;
-    --res64-red-500: #ea4f36;
-    --res64-red-300: #f57d4a;
-
-    --res64-orange-900: #ae2334;
-    --res64-orange-700: #e83b3b;
-    --res64-orange-500: #fb6b1d;
-    --res64-orange-300: #f79617;
-    --res64-orange-100: #f9c22b;
-
-    --res64-dark-orange-900: #7a3045;
-    --res64-dark-orange-700: #9e4539;
-    --res64-dark-orange-500: #cd683d;
-    --res64-dark-orange-300: #e6904e;
-    --res64-dark-orange-100: #fbb954;
-
-    --res64-yellow-900: #4c3e24;
-    --res64-yellow-700: #676633;
-    --res64-yellow-500: #a2a947;
-    --res64-yellow-300: #d5e04b;
-    --res64-yellow-100: #fbff86;
-
-    --res64-green-900: #165a4c;
-    --res64-green-700: #239063;
-    --res64-green-500: #1ebc73;
-    --res64-green-300: #91db69;
-    --res64-green-100: #cddf6c;
-
-    --res64-dark-green-900: #313638;
-    --res64-dark-green-700: #374e4a;
-    --res64-dark-green-500: #547e64;
-    --res64-dark-green-300: #92a984;
-    --res64-dark-green-100: #b2ba90;
-
-    --res64-teal-900: #0b5e65;
-    --res64-teal-700: #0b8a8f;
-    --res64-teal-500: #0eaf9b;
-    --res64-teal-300: #30e1b9;
-    --res64-teal-100: #8ff8e2;
-
-    --res64-blue-900: #323353;
-    --res64-blue-700: #484a77;
-    --res64-blue-500: #4d65b4;
-    --res64-blue-300: #4d9be6;
-    --res64-blue-100: #8fd3ff;
-
-    --res64-purple-900: #45293f;
-    --res64-purple-700: #6b3e75;
-    --res64-purple-500: #905ea9;
-    --res64-purple-300: #a884f3;
-    --res64-purple-100: #eaaded;
-
-    --res64-dark-pink-900: #753c54;
-    --res64-dark-pink-700: #a24b6f;
-    --res64-dark-pink-500: #cf657f;
-    --res64-dark-pink-300: #ed8099;
-
-    --res64-pink-900: #831c5d;
-    --res64-pink-700: #c32454;
-    --res64-pink-500: #f04f78;
-    --res64-pink-400: #f68181;
-    --res64-pink-200: #fca790;
-    --res64-pink-100: #fdcbb0;
-    
-    
-    --pgnwr-fg-box: var(--res64-orange-500);
-    --pgnwr-fg-logo: var(--res64-orange-300);
-    --pgnwr-fg-alt: var(--res64-purple-300);
-    --pgnwr-bg-page: var(--res64-dark-grey-900);
-    --pgnwr-bg-body: #141314;
-    --pgnwr-bg-header: var(--res64-dark-grey-900);
-  }
+#page {
+  position: relative;
+  margin: auto;
+  width: 84ch;
+    font-size: clamp(8px, 1.9vw, 18px); 
+  white-space: nowrap;
+  background-color: var(--pgnwr-bg-page);
+  display: flex;
+  flex-flow: column;
+  overflow: visible;
+  /* font-family: 'haxorville', monospace; */
+  /* font-family: 'Fira Code', monospace; */
   
+}
+
+
+
+
+#logo {
+  font-weight: 400;
+  color: var(--pgnwr-main);
+  /* font-family: 'Fira Code', monospace; */
+  letter-spacing: -0.4px;
+  line-height: 0.95;
+}
+
+
+
+
+
 .row {
     display: flex;
     flex-flow: row;
@@ -124,32 +104,6 @@ body {
     padding: 0;
 }
 
-body {
-    background-color: var(--pgnwr-bg-body);
-    overflow-x: hidden;
-
-}  
-
-#app {
-    align-content: center;
-    overflow-y: scroll;
-    
-}
-
-#page {
-    position: relative;
-    margin: auto;
-    /* width:  */
-    width: 84ch;
-
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    white-space: nowrap;
-    overflow-x:hidden;
-    background-color: var(--pgnwr-bg-page);
-    display: flex;
-    flex-flow: column;
-}
 
 .section
 {
@@ -157,9 +111,6 @@ body {
     flex-flow: row;
 }
 
-/* .col {
-    flex-flow: column;
-} */
 
 .col-3 {
     width: 21ch;
@@ -218,21 +169,18 @@ span.box{
     .nav {
         text-align: right;
         > a{
-            color: var(--pgnwr-fg-logo);
+            color: var(--pgnwr-bright);
         }
         > a:visited{
             
-            color: var(--res64-red-700);
+            color: var(--pgnwr-bright);
         }
         font-weight: 500;
     }
+    color:  var(--pgnwr-bright);
     background-color: var(--pgnwr-bg-header);
 }
 
-#logo {
-    font-weight: 400;
-    color: var(--pgnwr-fg-logo);
-}
 
 /* http://aleclownes.com/2017/02/01/crt-display.html */
 
@@ -366,7 +314,7 @@ span.box{
       text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
     }
   }
-  .crt::after {
+  /* .crt::after {
     content: " ";
     display: block;
     position: absolute;
@@ -392,7 +340,7 @@ span.box{
     z-index: 2;
     background-size: 100% 2px, 3px 100%;
     pointer-events: none;
-  }
+  } */
   .crt {
     animation: textShadow 1.6s infinite;
     
@@ -423,17 +371,17 @@ span.box{
   ::-webkit-scrollbar-track {
     /* box-shadow: inset 0 0 5px grey;  */
     border-radius: 0px;
-    background-color: var(--res64-dark-orange-900); 
+    background-color: var(--pgnwr-dark); 
     /* border: 1px solid #0b5e65; */
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--res64-dark-orange-700); 
+    background: var(--pgnwr-main); 
     border-radius: 0px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--res64-dark-orange-300); 
+    background: var(--pgnwr-bright); 
   }
