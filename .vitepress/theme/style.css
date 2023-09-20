@@ -1,14 +1,23 @@
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
 @font-face {
-  font-family: 'fairfax';
+  font-family: 'haxorville';
   src:
-    /* url('assets/fonts/FSEX302.ttf') format('truetype'); */
-    /* url('assets/fonts/CozetteVector.otf') format('truetype'); */
-    /* url('assets/fonts/Moder DOS 437 Win.ttf') format('truetype'); */
-      url('assets/fonts/Fairfax.ttf') format('truetype');
+         url('assets/fonts/haxorville.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
+}/* CSS */
+
+/* 
+@font-face {
+  font-family: 'fairfax';
+  src:
+      url('assets/ts/fonts/fairfax.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
 
 
 :root {
@@ -23,13 +32,14 @@ html, body, #app{
   margin: 0;
   padding: 0;
   background-color: var(--pgnwr-background);
-  font-family: 'fairfax', monospace;
+  font-family: 'haxorville', monospace;
   line-height: 1;
-  /* letter-spacing: -0.1px; */
+  letter-spacing: -0.1px;
 }
 
 a {
   color:  var(--pgnwr-main);
+  text-decoration: none;
 }
 
 a:hover {
@@ -47,23 +57,73 @@ a:hover {
 #page {
   position: relative;
   margin: auto;
-  width: 84ch;
-  font-size: clamp(8px, 1.9vw, 18px); 
+  padding-left: 1ch;
+  padding-right: 1ch;
   white-space: nowrap;
   display: flex;
   flex-flow: column;
   overflow: visible;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 480px) {
+
+  #page {
+    width: calc(100vw - 3ch);
+    font-size: 4.2vw; 
+  }
+
+  .frame > .line > .wrapper > .content {
+    text-align: center;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 480px) {
+
+  #page {
+    width: 44ch;
+    font-size: 3.1vw; 
+  }
+
+  .frame > .line > .wrapper > .content {
+    text-align: center;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  #page {
+    width: 86ch;
+    font-size: clamp(10px, 2vw, 17px); 
+  }
+
+  .frame > .line > .wrapper > .content {
+    text-align: right;
+  }
+
+
+}
+
+
 span.box{
   color: var(--pgnwr-dark);
 }
 
+#logo-container {
+text-align: center;
+}
 
 #logo {
+  margin: auto;
   color:  var(--pgnwr-bright);
   letter-spacing: -0.4px;
+  font-family: 'Fira Code', monospace;
   line-height: 0.96;
+  font-size: clamp(7px, 1.8vw, 20px); 
 }
 
 
@@ -144,25 +204,10 @@ span.box{
 
 
 
-#header {
-    .nav {
-        text-align: right;
-        > a{
-            color: var(--pgnwr-bright);
-        }
-        > a:visited{
-            
-            color: var(--pgnwr-bright);
-        }
-        font-weight: 500;
-    }
-    color:  var(--pgnwr-bright);
-    background-color: var(--pgnwr-bg-header);
-}
 
 
 /* http://aleclownes.com/2017/02/01/crt-display.html */
-/* 
+
 @keyframes flicker {
     0% {
       opacity: 0.27861;
@@ -292,8 +337,8 @@ span.box{
     100% {
       text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
     }
-  } */
-  /* .crt::after {
+  }
+  .crt::after {
     content: " ";
     display: block;
     position: absolute;
@@ -319,7 +364,7 @@ span.box{
     z-index: 2;
     background-size: 100% 2px, 3px 100%;
     pointer-events: none;
-  } */
+  }
   .crt {
     animation: textShadow 1.6s infinite;
     
