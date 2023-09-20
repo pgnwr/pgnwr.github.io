@@ -25,7 +25,7 @@ html, body, #app{
   background-color: var(--pgnwr-background);
   font-family: 'fairfax', monospace;
   line-height: 1;
-  letter-spacing: -0.1px;
+  /* letter-spacing: -0.1px; */
 }
 
 a {
@@ -162,7 +162,7 @@ span.box{
 
 
 /* http://aleclownes.com/2017/02/01/crt-display.html */
-
+/* 
 @keyframes flicker {
     0% {
       opacity: 0.27861;
@@ -292,8 +292,8 @@ span.box{
     100% {
       text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
     }
-  }
-  .crt::after {
+  } */
+  /* .crt::after {
     content: " ";
     display: block;
     position: absolute;
@@ -319,7 +319,7 @@ span.box{
     z-index: 2;
     background-size: 100% 2px, 3px 100%;
     pointer-events: none;
-  }
+  } */
   .crt {
     animation: textShadow 1.6s infinite;
     
