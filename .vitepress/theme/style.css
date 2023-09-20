@@ -9,16 +9,6 @@
   font-display: swap;
 }/* CSS */
 
-/* 
-@font-face {
-  font-family: 'fairfax';
-  src:
-      url('assets/ts/fonts/fairfax.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-} */
-
 
 :root {
   /* https://lospec.com/palette-list/2-bit-matrix */
@@ -35,6 +25,21 @@ html, body, #app{
   font-family: 'haxorville', monospace;
   line-height: 1;
   letter-spacing: -0.1px;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+body {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 a {
@@ -77,6 +82,16 @@ a:hover {
     text-align: center;
   }
 
+  .service {
+    
+    width: 50%;
+}
+
+.service > img {
+  width: 10ch;
+}
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -91,6 +106,10 @@ a:hover {
     text-align: center;
   }
 
+  .service {
+    width: 21ch;
+}
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -104,6 +123,11 @@ a:hover {
   .frame > .line > .wrapper > .content {
     text-align: right;
   }
+
+  .service {
+    width: 21ch;
+}
+
 
 
 }

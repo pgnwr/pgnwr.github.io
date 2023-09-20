@@ -16,7 +16,7 @@ import Crew from './pages/block/Crew.vue'
       <Header/>
       <Logo/>
       <Services/>
-      <Crew/>
+      <!-- <Crew/> -->
     </div>
   <Content class="content"/>
 </template>

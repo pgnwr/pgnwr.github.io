@@ -18,6 +18,8 @@
 <style>
 #logo-container {
 text-align: center;
+margin-top: 1em;
+margin-bottom: 1em;
 }
 
 #logo {

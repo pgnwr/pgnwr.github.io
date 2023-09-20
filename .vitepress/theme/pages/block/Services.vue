@@ -1,70 +1,144 @@
 <template>
 
-<div class="heading section">
+<div class="section">
     <br/>
-    === Services === <br/>
-    <br/>
+<span id="welcome"> Welcome <b>&lt;%username&gt;</b>!</span>
+
+<br/>
+<br/>
+<span id="invite">
+    Come closer, take a look!  We have services of highest quality. All you may ever need in your journeys - if you don't see something you really don't need it. 
+</span>
+<br/>
+<br/>
 </div>
 
-<div class="services section">
-    <div class="col-3" v-for="n in 4">
-        <div class="service">
-            
-            ┌───────────────────┐<br/>
-            │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br/>
-            │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br/>
-            │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br/>
-            │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br/>
-            │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br/>
-            │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br/>
-            │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br/>
-            │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br/>
-            │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br/>
-            ├───────────────────┤<br/>
-            │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br/>
-            └───────────────────┘<br/>
-        </div>
+<div id="services" class="services">
+    <div class="heading" >
+      === Services === <br/>
     </div>
-    <!-- <div class="col-3">
-        <div class="service">
-            <div class="icon">
-                <img src="../../../../assets/img/male.jpeg" alt="Eduard Kagan"/>
-            </div>
-            <div class="name">
-                
-                &nbsp;Software development
-            </div>
-        </div>
+<div class="service-list">
+    <div class="service">
+        <img src="../../../../assets/img/srvs/develop.png" alt="Develop"/>
+        <div class="title">Develop</div>
     </div>
-    <div class="col-3">
-        <div class="service">
-            <div class="icon">
-                <img src="../../../../assets/img/male.jpeg" alt="Eduard Kagan"/>
-            </div>
-            <div class="name">
-                &nbsp;&nbsp;&nbsp;&nbsp;IT consulting
-            </div>
-        </div>
+    <div class="service">
+        <img src="../../../../assets/img/srvs/assist.png" alt="Assist"/>
+        <div class="title">Assist</div>
     </div>
-    <div class="col-3">
-        <div class="service">
-            <div class="icon">
-                <img src="../../../../assets/img/male.jpeg" alt="Eduard Kagan"/>
-            </div>
-            <div class="name">
-                &nbsp;&nbsp;&nbsp;Team development
-            </div>
-        </div>
+    <div class="service">
+        <img src="../../../../assets/img/srvs/coach.png" alt="Coach"/>
+        <div class="title">Coach</div>
     </div>
-    <div class="col-3">
-        <div class="service">
-            <div class="icon">
-                <img src="../../../../assets/img/male.jpeg" alt="Eduard Kagan"/>
-            </div>
-            <div class="name">
-                &nbsp;&nbsp;Personal coaching
-            </div>
-        </div>
-    </div> -->
+    <div class="service">
+        <img src="../../../../assets/img/srvs/train.png" alt="Train"/>
+        <div class="title">Train</div>
+    </div>
+</div>
 </div>
 </template>
+
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  
+  const asciiText = document.getElementById('welcome')
+  const asciiArt = asciiText.innerText
+  asciiText.innerHTML = ''
+
+  const inviteText = document.getElementById('invite')
+  const inviteContent = inviteText.innerText
+  inviteText.innerHTML = ''
+  
+
+  setTimeout(() => 
+ writeText(asciiText, asciiArt)
+.then(() => writeText(inviteText, inviteContent)
+.then(() => {document.getElementById("services").classList.add("shown")})), 1000)
+ 
+})
+
+// Write text to a target element with a specified delay in ms
+function writeText(target, content, delay = 10)
+{
+  // Loop through array of content characters
+  return new Promise((resolve) => {
+    // Make an array of the specified content
+    const contentArray = content.split('')
+
+    // Keep track of the character currently being written
+    let current = 0
+
+    while (current < contentArray.length) {
+      ;((curr) => {
+        setTimeout(() => {
+          target.innerHTML += contentArray[curr]
+          // Scroll to the bottom of the screen unless scroll is false
+          window.scrollTo(0, document.body.scrollHeight)
+
+          // Resolve the promise once the last character is written
+          if (curr === contentArray.length - 1) resolve()
+        }, delay * curr) // increase delay with each iteration
+      })(current++)
+    }
+  })
+}
+</script>
+<style>
+.section {
+text-align: left;
+white-space: normal;
+color:  var(--pgnwr-main);
+padding-left: 1ch;
+padding-right: 1ch;
+}
+
+.heading {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 1ch;
+    padding-right: 1ch;
+    color: var(--pgnwr-bright); 
+    font-weight: 700;
+    text-align: center;
+}
+
+.service-list {
+    padding-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+    /* width: 21ch; */
+    text-align: center;
+}
+
+.service > img {
+    width: 16ch;
+}
+
+.service > .title {
+    padding-top: 0.5em;
+    color: var(--pgnwr-main);
+    font-weight: 700; 
+}
+
+
+
+.services{
+    opacity: 0%;
+    -webkit-transition: opacity 0.7s ease-in;
+       -moz-transition: opacity 0.7s ease-in;;
+        -ms-transition: opacity 0.7s ease-in;
+         -o-transition: opacity 0.7s ease-in;
+            transition: opacity 0.7s ease-in;
+}
+.services.shown{
+    opacity: 100%;
+}
+</style>
