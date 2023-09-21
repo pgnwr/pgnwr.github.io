@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Paganware",
-  description: "Paganware MB Site",
+  title: "paganware",
+  titleTemplate: ':title',
   head: [
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href:  '/apple-touch-icon.png' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href:  '/favicon-32x32.png' }],
@@ -15,27 +15,4 @@ export default defineConfig({
     ['meta', { name: 'apple-touch-icon', content: '#3e3546'}]
   
   ]
-
-
-//   themeConfig: {
-//     // https://vitepress.dev/reference/default-theme-config
-//     nav: [
-//       { text: 'Home', link: '/' },
-//       { text: 'Examples', link: '/markdown-examples' }
-//     ],
-
-//     sidebar: [
-//       {
-//         text: 'Examples',
-//         items: [
-//           { text: 'Markdown Examples', link: '/markdown-examples' },
-//           { text: 'Runtime API Examples', link: '/api-examples' }
-//         ]
-//       }
-//     ],
-
-//     socialLinks: [
-//       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-//     ]
-//   }
 })
