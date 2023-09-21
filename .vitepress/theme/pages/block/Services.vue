@@ -18,22 +18,22 @@
       === Services === <br/>
     </div>
 <div class="service-list">
-    <div class="service">
+    <a class="service">
         <img src="../../../../assets/img/srvs/develop.png" alt="Develop"/>
         <div class="title">Develop</div>
-    </div>
-    <div class="service">
+    </a>
+    <a class="service">
         <img src="../../../../assets/img/srvs/assist.png" alt="Assist"/>
         <div class="title">Assist</div>
-    </div>
-    <div class="service">
+    </a>
+    <a class="service">
         <img src="../../../../assets/img/srvs/coach.png" alt="Coach"/>
         <div class="title">Coach</div>
-    </div>
-    <div class="service">
+    </a>
+    <a class="service">
         <img src="../../../../assets/img/srvs/train.png" alt="Train"/>
         <div class="title">Train</div>
-    </div>
+    </a>
 </div>
 </div>
 </template>
