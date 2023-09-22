@@ -51,15 +51,15 @@ a:hover {
   color:  var(--pgnwr-bright);
 }
 
-.service {
+.service-list > .service {
   cursor: pointer;
 }
 
-.service:hover > .title {
+.service-list > .service:hover > .title {
   color:  var(--pgnwr-bright);
 }
 
-.service:hover > img {
+.service-list > .service:hover > img {
   filter: brightness(1.5);
 }
 
@@ -68,6 +68,7 @@ a:hover {
   align-content: center;
   width: 100vw;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -83,6 +84,7 @@ a:hover {
   overflow: visible;
   padding-bottom: 3em;
   min-height: calc(100vh - 3em - 1px);
+  min-height: calc(var(--vh, 1vh) * 100 - 3em - 1px);
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -97,12 +99,12 @@ a:hover {
     text-align: center;
   }
 
-  .service {
+  .service-list >  .service {
     
     width: 50%;
 }
 
-.service > img {
+.service-list > .service > img {
   width: 10ch;
 }
 
@@ -131,9 +133,21 @@ a:hover {
   width: calc(100vw - 5ch);
   margin-top: 2em;
   height: calc(100vh - 7em);
+  height: calc(var(--vh, 1vh) * 100 - 7em);
 }
 
+.content > .header > .icon {
+  width: calc(100vw - 3ch);
+}
 
+.content > .header {
+
+flex-wrap: wrap;
+
+}
+.content > .service {
+  margin-top: 0.41em;
+ }
 
 }
 
@@ -149,7 +163,7 @@ a:hover {
     text-align: center;
   }
 
-  .service {
+  .service-list >  .service {
     width: 21ch;
 }
 
@@ -171,10 +185,22 @@ a:hover {
 } 
 
 .modal {
-  width: 60ch;
-  margin-top: 4em;
-  height: calc(100vh - 8em);
+  width: 42ch;
+  margin-top: 12em;
+  height: calc(30em);
+  /* height: calc(var(--vh, 1vh) * 100 - 8em); */
 }
+
+.content > .header {
+
+  flex-wrap: nowrap;
+  
+  }
+
+  .content > .service {
+    margin-top: 0.275em;
+   }
+
 
 }
 
@@ -190,7 +216,7 @@ a:hover {
     text-align: right;
   }
 
-  .service {
+  .service-list > .service {
     width: 21ch;
 }
 
@@ -394,6 +420,7 @@ a:hover {
   /* z-index:-1; // push the sticky element to the back */
   width:100%;
   height:100vh;
+  height: calc(var(--vh, 1vh) * 100);
   /* border:10px solid #fff; */
   /* overflow:hidden; // if using video */
   /* img, video{

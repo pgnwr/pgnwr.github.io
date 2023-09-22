@@ -2,12 +2,12 @@
 
 <div class="section">
     <br/>
-<span id="welcome"> Welcome <b>&lt;%username&gt;</b>!</span>
+<span id="welcome"> Welcome <b>${username}</b>!</span>
 
 <br/>
 <br/>
 <span id="invite">
-    Come closer, take a look!  We have services of highest quality. All you may ever need in your journeys - if you don't see something you really don't need it. 
+    Come closer, take a look! We provide services of highest quality. All you may ever need in your journeys - if you don't see something you really don't need it. Let's see, what you need?
 </span>
 <br/>
 <br/>
@@ -15,24 +15,24 @@
 
 <div id="services" class="services">
     <div class="heading" >
-      === Services === <br/>
+      Pick a service <br/>
     </div>
 <div class="service-list">
     <a class="service">
-        <img src="../../../../assets/img/srvs/develop.png" alt="Develop"/>
-        <div class="title">Develop</div>
+        <img src="../../../../assets/img/srvs/code.png" alt="Develop"/>
+        <div class="title">Code</div>
     </a>
     <a class="service">
-        <img src="../../../../assets/img/srvs/assist.png" alt="Assist"/>
-        <div class="title">Assist</div>
+        <img src="../../../../assets/img/srvs/design.png" alt="Assist"/>
+        <div class="title">Design</div>
     </a>
     <a class="service">
-        <img src="../../../../assets/img/srvs/coach.png" alt="Coach"/>
-        <div class="title">Coach</div>
+        <img src="../../../../assets/img/srvs/mindfulness.png" alt="Coach"/>
+        <div class="title">Mindfulness</div>
     </a>
     <a class="service">
-        <img src="../../../../assets/img/srvs/train.png" alt="Train"/>
-        <div class="title">Train</div>
+        <img src="../../../../assets/img/srvs/language.png" alt="Train"/>
+        <div class="title">Language</div>
     </a>
 </div>
 </div>
@@ -110,7 +110,7 @@ padding-right: 1ch;
     flex-wrap: wrap;
 }
 
-.service {
+.service-list >  .service {
     margin-top: 1em;
     margin-bottom: 1em;
     display: block;
@@ -118,11 +118,11 @@ padding-right: 1ch;
     text-align: center;
 }
 
-.service > img {
+.service-list > .service > img {
     width: 16ch;
 }
 
-.service > .title {
+.service-list > .service > .title {
     padding-top: 0.5em;
     color: var(--pgnwr-main);
     font-weight: 700; 

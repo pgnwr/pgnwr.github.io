@@ -30,12 +30,94 @@
         <div class="handle">
             <div class="scrollable">
           <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit aptent nibh primis id, enim quis risus maecenas. Scelerisque ligula vitae sollicitudin varius amet tristique auctor blandit, lorem semper purus dictum porta curae iaculis aliquet cursus, lobortis arcu diam dui nunc convallis mi. Ut morbi venenatis efficitur ultricies magna dolor, lorem ridiculus penatibus sociosqu mattis torquent ad, molestie cubilia commodo libero himenaeos viverra, dictum varius ornare hendrerit eget. Platea et dapibus phasellus maecenas facilisis penatibus urna fames tempor lectus, natoque id senectus dis ipsum inceptos suscipit mus consectetur integer, ultrices eleifend imperdiet lacus tellus sapien dictum enim eros. Consectetur a erat pretium ad diam per interdum lobortis dictumst, ipsum facilisis orci ante dignissim fringilla suspendisse sem. Egestas integer nisi dignissim primis sodales bibendum leo diam congue in, nunc fames senectus scelerisque nulla hac aptent cras semper, purus sed tempor donec mi elementum accumsan taciti massa. Sem sodales magna felis mattis pretium quam tortor iaculis, congue commodo praesent nec pulvinar ultricies sollicitudin adipiscing, ante proin rhoncus magnis condimentum morbi ullamcorper.
+
+          <div class="header"> 
+
+            <div class="icon"><img src="../../../../assets/img/srvs/language.png" style=" " alt="icon"/> </div>
+            <div class="description">
+                <div class="title">Software development</div>
+                <div class="summary">Need some software be ready quick? Or you need someone to code solution for you? Worry not we are hear to help. </div>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="header"> 
+                <div class="title"> 
+                Consultation 
+            </div>
+            <div class="spacer"> 
+       
+            </div>
+            <div class="price"> 
+                $35<img src="../../../../assets/img/icns/time.png" alt="/h"/> 
+            </div>
+            </div>
+            <div class="content"> 
+                <p>
+                    If you are feeling lost, upset, don't know what to do, have problems in your relationship or struggling with some kind of situation 
                 </p>
-                <p>Tortor senectus ut tempus diam cubilia facilisis commodo dis pharetra aenean, donec tincidunt quam faucibus eget sociosqu malesuada potenti orci suscipit aliquet, et vel nam nunc sem cras nulla magnis ante. Vivamus lacinia litora aptent nec a viverra lorem nunc lectus augue purus, senectus molestie imperdiet dolor himenaeos efficitur ad varius convallis. Porttitor potenti elementum semper viverra curabitur turpis faucibus, ullamcorper nec inceptos scelerisque in erat sed eget, laoreet cras dolor ex curae magnis. Eleifend dictum eros torquent aliquet tristique tortor laoreet arcu penatibus, risus suscipit fusce elementum ad libero congue maecenas, orci blandit per molestie fames at in malesuada.
-</p>
-<p>Accumsan massa tristique cubilia congue justo tempus pharetra commodo eu pretium imperdiet platea venenatis sociosqu, vestibulum blandit amet quisque ante fusce egestas quis vel feugiat potenti aliquam metus. Litora ornare aliquam eleifend dolor fermentum bibendum inceptos rhoncus, congue aliquet nullam penatibus magnis ex suspendisse, rutrum nibh dictumst tristique primis eros elementum. Ligula tempus diam quis accumsan potenti et urna, tempor at amet ridiculus lacus platea parturient porttitor, ipsum sit nisi aliquam interdum per. Ipsum porta proin tempus consequat dui diam condimentum, sit amet praesent curae augue. Tortor nec habitasse nullam inceptos sem conubia curae maecenas aliquet, aliquam in dis metus lectus urna venenatis ipsum ut, consectetur phasellus vel curabitur fringilla eget accumsan himenaeos. Sollicitudin finibus justo morbi molestie mattis magnis fermentum vitae platea netus posuere, efficitur penatibus sagittis ligula facilisi vivamus nostra pretium dolor commodo aenean, blandit venenatis imperdiet at vehicula taciti dignissim in quis duis. Conubia natoque fermentum quisque feugiat nec at nisi dictum velit donec magna, duis ante est posuere mus lacus nascetur tempor mattis accumsan morbi, in venenatis tristique augue nostra ornare maximus eros rutrum congue. Sagittis curae senectus parturient elit aliquet sollicitudin faucibus himenaeos cursus nullam, fusce erat lorem duis torquent litora per lacus lobortis. Maximus quis lacinia sapien lobortis quisque adipiscing ridiculus id taciti, aliquet habitant aliquam nullam turpis faucibus mattis nibh interdum fermentum, primis convallis purus tincidunt per dis sollicitudin vestibulum.
-</p>        
+            </div>
+          </div>
+          <div class="service">
+            <div class="header"> 
+                <div class="title"> 
+                    Therapeutic tale
+            </div>
+            <div class="spacer"> 
+       
+            </div>
+            <div class="price"> 
+                $100<img src="../../../../assets/img/icns/pack.png" alt="/h"/> 
+            </div>
+            </div>
+            <div class="content"> 
+                <p>
+                    Individual therapeutic story, designed especially for you. Helps find the solution to the specific problem, find answers to questions like “What do I really want right now? What is my mistake? What is really going on with me right now?”. Consists of three parts: lead-in consultation (40 mins) to formulate the request; the Journey itself (2-3 hours, depends on the length of the story and client’s speed); the end product: your story in PDF with illustrations  
+                </p>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="header"> 
+                <div class="title"> 
+                    Speaking 
+            </div>
+            <div class="spacer"> 
+       
+            </div>
+            <div class="price"> 
+                $25<img src="../../../../assets/img/icns/time.png" alt="/h"/> 
+            </div>
+            </div>
+            <div class="content"> 
+                <p>
+                    If you want to boost your language,  expand your vocabulary and simply have fun in English!
+
+                </p>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="header"> 
+                <div class="title"> 
+                    Grammar 
+            </div>
+            <div class="spacer"> 
+       
+            </div>
+            <div class="price"> 
+                $25<img src="../../../../assets/img/icns/time.png" alt="/h"/> 
+            </div>
+            </div>
+            <div class="content"> 
+                <p>
+                    If you struggle to understand grammar or just want to improve your level
+                </p>
+            </div>
+          </div>
+          
+         
+      
 </div> 
 </div>
 </div>
@@ -55,6 +137,73 @@
 
    </template>
    <style>
+
+
+.service > .header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+}
+
+.service > .header > .title {
+    color: var(--pgnwr-bright);
+    font-weight: 700;
+}
+
+.service > .header > .spacer {
+ flex-grow: 1;
+}
+
+.service > .header > .price {
+    color: var(--pgnwr-bright);
+}
+
+.service > .header {
+    display: flex;
+    flex-direction: row;
+}
+
+.content > .header {
+    display: flex;
+flex-direction: row;
+
+}
+.content > .header > .icon, .content > .header > .description {
+    display: flex;
+flex-direction: column;
+}
+
+.content > .header > .description > .title {
+    color: var(--pgnwr-bright);
+    font-weight: 700;
+    margin-bottom: 1em;
+
+}
+
+
+.content > .header > .description  {
+    color: var(--pgnwr-background);
+    font-weight: 400;
+}
+
+.content > .header > .icon {
+    align-items: center;
+}
+
+.content > .header > .icon img {
+    height: 6em;
+    width: 6em;
+    filter: brightness(0.2);
+    margin-right: 1ch;
+}
+
+.price img {
+    height: 2em;
+    margin-top: -0.5em;
+    margin-bottom: -0.5em;
+    margin-left: 1ch;
+}
+
 .modal-cover, .modal-handle{
     position: absolute;
     top: 0;
@@ -66,7 +215,7 @@
 
 .modal-cover {
     background-color: #000;
-    opacity: 10%;
+    opacity: 40%;
 }
 
 
@@ -141,11 +290,12 @@ margin-right: 2px;
     color: var(--pgnwr-background);
 }
 
-.main {
+.modal > .main {
     height: calc(100% - 4em);
     display: flex;
+    flex-direction: column;
 }
-.main > .frame {
+.modal > .main > .frame {
     margin-left: calc(0.5ch - 1px);
     margin-right: calc(0.5ch - 1px);
     background-color: var(--pgnwr-background);
@@ -153,7 +303,7 @@ margin-right: 2px;
     padding-left: 2px;
     padding-right: 2px;
 }
-.main > .frame > .handle {
+.modal > .main > .frame > .handle {
     background-color: var(--pgnwr-dark);
     min-height: 1em;
     padding-left: calc(0.5ch - 1px);
@@ -161,12 +311,12 @@ margin-right: 2px;
     height: 100%;
 }
 
-.main > .frame > .handle > .scrollable {
+.modal > .main > .frame > .handle > .scrollable {
     overflow-y: auto;
     height: 100%;
 }
 
-.main > .frame > .handle > .scrollable > .content {
+.modal > .main > .frame > .handle > .scrollable > .content {
     padding: 1ch;
 }
 
