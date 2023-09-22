@@ -1,9 +1,11 @@
 <template>
+    
     <div class="footer">
-        <div class="legal"> 
-            Paganware, MB (306354553)<br/>
-            V. Nageviciaus g. 3, Vilnius
-        </div>
+        <div class="divider">  </div>
+    <div class="legal"> 
+        Paganware, MB (306354553)<br/>
+        V. Nageviciaus g. 3, Vilnius
+    </div>
     <div class='spacer'>
     </div>
         <div class="links"> 
@@ -13,7 +15,7 @@
         </div>
         <div class="links"> 
             <a href="https://github.com/pgnwr" target="_blank">GitHub</a>
-            Patreon
+            <a href="https://patreon.com/paganware" target="_blank">Patreon</a>
         </div>
     </div>
    
@@ -24,25 +26,33 @@
         bottom: 0px;
     position: absolute;
     width: calc(100% - 2ch);
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
       display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
     }
 
     .footer > .legal {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
-        width: 28ch;
         color: var(--pgnwr-dark); 
     } 
     .footer > .spacer {
-        display: flex; 
+        /* display: flex;  */
         flex-grow: 1;
     }
     .footer > .links {
         display: flex;
-        flex-direction: column;
-        width: 8ch;
-        margin-left: 2ch;
+        /* flex-direction: column; */
+        /* width: 8ch; */
+        /* margin-left: 2ch; */
     } 
+    .divider {
+        width: 86ch;
+        margin-top: calc(-0.5em - 2px);
+        position: absolute;
+        height: 2px;
+        background-color: var(--pgnwr-dark); 
+
+    }
 </style>

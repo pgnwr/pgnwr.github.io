@@ -93,6 +93,26 @@ a:hover {
   width: 10ch;
 }
 
+.footer > .legal {
+  display: none;
+  width: calc(100vw - 3ch);
+} 
+
+.footer > .spacer {
+    display: none;
+  }
+
+.divider {
+  width: calc(100vw - 3ch);
+} 
+
+.footer > .links {
+  flex-direction: row;
+} 
+
+.footer > .links a {
+  margin-left: 2ch;
+} 
 
 
 }
@@ -113,6 +133,24 @@ a:hover {
     width: 21ch;
 }
 
+.footer {
+  text-align: right;
+  }
+
+.footer > .legal {
+  display: none;
+  width: 100%;
+} 
+
+.divider {
+  width: 44ch;
+} 
+
+.footer > .links a {
+  margin-left: 2ch;
+} 
+
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -131,8 +169,30 @@ a:hover {
     width: 21ch;
 }
 
+.footer > .legal {
+  width: 28ch;
+} 
 
+.footer > .spacer {
+  display: flex; 
+}
 
+.divider {
+  width: 86ch;
+} 
+.footer > .links a {
+  margin-right: 0;
+} 
+.footer > .links {
+ flex-direction: column;
+        /* width: 9ch;
+        margin-left: 2ch; */
+      } 
+
+      .footer > .legal {
+        display: flex;
+       
+    } 
 }
 
 /* http://aleclownes.com/2017/02/01/crt-display.html */
