@@ -1,7 +1,7 @@
 <template>
     
-    <div class="modal-cover"> </div>
-    <div class="modal-handle"> 
+  
+    <div class="modal-handle" :class="{ shown: shown}"> 
         <div class="modal">
             <div class="header">
                 <div class="modal-frame-top">
@@ -12,9 +12,9 @@
                     
                
                 </div>
-                <div class="modal-close-handle">
+                <a id="x-modal" @click="$emit('update:shown', false)" class="modal-close-handle">
                     [X]
-                </div>
+                </a>
                 <div class="modal-frame-rt">
                     <div class="line">
                         <div class="inlay"> </div>
@@ -127,16 +127,42 @@
     <div class="frame">
         <div class="split"></div>
         <div class="buttons">
-<a href="#">Close</a>
+<a @click="$emit('update:shown', false)">Close</a>
 </div>
 </div>
 </div>
 </div>
 </div>
-   
+
 
    </template>
+
+<script setup>
+const props = defineProps(['shown'])
+</script>
+
    <style>
+.modal-cover {
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    opacity: 0% ;
+    pointer-events: none;
+}
+.modal-cover.shown {
+    visibility: visible;
+      opacity: 40% !important;
+      pointer-events: all;
+}
+.modal-handle {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    pointer-events: none;
+}
+.modal-handle.shown {
+    visibility: visible;
+    opacity: 1 !important;
+}
 
 
 .service > .header {
@@ -215,7 +241,7 @@ flex-direction: column;
 
 .modal-cover {
     background-color: #000;
-    opacity: 40%;
+    opacity: 0;
 }
 
 
@@ -223,7 +249,7 @@ flex-direction: column;
     /* width: 64ch; */
     margin-left: auto;
     margin-right: auto;
-    
+    pointer-events: all;
     background-color: var(--pgnwr-dark);
 
 }

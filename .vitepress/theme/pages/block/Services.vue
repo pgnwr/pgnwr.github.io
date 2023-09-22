@@ -18,19 +18,19 @@
       Pick a service <br/>
     </div>
 <div class="service-list">
-    <a class="service">
+    <a class="service" @click="$emit('update:codeShown', true)">
         <img src="../../../../assets/img/srvs/code.png" alt="Develop"/>
         <div class="title">Code</div>
     </a>
-    <a class="service">
+    <a class="service" @click="$emit('update:designShown', true)">
         <img src="../../../../assets/img/srvs/design.png" alt="Assist"/>
         <div class="title">Design</div>
     </a>
-    <a class="service">
+    <a class="service" @click="$emit('update:teamShown', true)">
         <img src="../../../../assets/img/srvs/mindfulness.png" alt="Coach"/>
         <div class="title">Mindfulness</div>
     </a>
-    <a class="service">
+    <a class="service" @click="$emit('update:languageShown', true)">
         <img src="../../../../assets/img/srvs/language.png" alt="Train"/>
         <div class="title">Language</div>
     </a>
@@ -40,6 +40,9 @@
 
 <script setup>
 import { onMounted } from 'vue'
+
+const props = defineProps(['codeShown','designShown','teamShown','languageShown'])
+
 
 onMounted(() => {
   

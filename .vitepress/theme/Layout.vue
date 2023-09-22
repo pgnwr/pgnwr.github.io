@@ -2,6 +2,9 @@
 import { useData } from 'vitepress'
 // https://vitepress.dev/reference/runtime-api#usedata
 const { page, site, frontmatter } = useData()
+import {
+  defineComponent, onMounted, ref, reactive, nextTick, toRefs, watch,
+} from 'vue';
 
 import Logo from './pages/block/Logo.vue'
 // import Header from './pages/block/Header.vue'
@@ -20,6 +23,11 @@ window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
+const codeShown = ref(false);
+const designShown = ref(false);
+const teamShown = ref(false);
+const languageShown = ref(false);
 </script>
 
 <template>
@@ -27,11 +35,16 @@ window.addEventListener('resize', () => {
     <div id="page">
       <Header/>
       <Logo/>
-      <Services/>
+      <Services v-model:codeShown="codeShown" v-model:designShown="designShown" 
+      v-model:teamShown="teamShown" v-model:languageShown="languageShown"/>
       <!-- <Crew/> -->
       <Footer/>
       
     </div>
   <Content class="content"/>
-  <Modal/>
+  <div class="modal-cover" :class="{ shown: codeShown || designShown || teamShown || languageShown }" @click="codeShown = false; designShown = false; teamShown = false; languageShown = false;">  </div>
+  <Modal v-model:shown="codeShown"/>
+  <Modal v-model:shown="designShown"/>
+  <Modal v-model:shown="teamShown"/>
+  <Modal v-model:shown="languageShown"/>
 </template>

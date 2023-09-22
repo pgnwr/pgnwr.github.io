@@ -42,12 +42,19 @@ body {
   animation-fill-mode: forwards;
 }
 
-a {
+a, a:active {
   color:  var(--pgnwr-main);
   text-decoration: none;
 }
 
-a:hover {
+a {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
+}
+
+
+a:hover, a:active {
   color:  var(--pgnwr-bright);
 }
 
