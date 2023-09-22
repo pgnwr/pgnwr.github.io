@@ -25,8 +25,11 @@
 				</div>
 				<div class="content">
 					<p>
-						If you are feeling lost, upset, don't know what to do, have problems
-						in your relationship or struggling with some kind of situation
+						You or your friend feeling lost, upset, don't know what to do, have
+						problems in your relationship or struggling with some kind of
+						situation - this will impact not only your life quality, but also
+						may harm others. We can help you or your employees deal with
+						internal problems and perform better.
 					</p>
 				</div>
 			</div>
@@ -38,13 +41,14 @@
 				</div>
 				<div class="content">
 					<p>
-						Individual therapeutic story, designed especially for you. Helps
-						find the solution to the specific problem, find answers to questions
-						like “What do I really want right now? What is my mistake? What is
-						really going on with me right now?”. Consists of three parts:
-						lead-in consultation (40 mins) to formulate the request; the Journey
-						itself (2-3 hours, depends on the length of the story and client’s
-						speed); the end product: your story in PDF with illustrations
+						Individual therapeutic story, designed especially for you to unpack
+						potential and highlight problems. Helps find the solution to the
+						specific problem, find answers to questions like “What do I really
+						want right now? What is my mistake? What is really going on with me
+						right now?”. Consists of three parts: lead-in consultation (40 mins)
+						to formulate the request; the Journey itself (2-3 hours, depends on
+						the length of the story and client's speed); the end product:
+						personal story digital booklet for your to keep.
 					</p>
 				</div>
 			</div>

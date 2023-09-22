@@ -24,7 +24,13 @@
 					<div class="price">$50<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
-					<p>___</p>
+					<p>
+						Need a team, but have non at the moment, or you are looking for
+						assistance in expanding team - good, we have service right for you.
+						From interview preparation and setup, to on-boarding design and
+						culture-fostering events - we can do it all. Also we can shadow
+						teams and provide you with insights and develop improvement plan.
+					</p>
 				</div>
 			</div>
 			<div class="service">
@@ -34,7 +40,13 @@
 					<div class="price">$50<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
-					<p>___</p>
+					<p>
+						Modern development process hardly resembles general processes inside
+						company, due to many technological and cultural shifts lately. But
+						we can help you to develop processes, setup guidelines and standards
+						for teams to follow - this also implies working with team directly
+						to ensure alignment.
+					</p>
 				</div>
 			</div>
 			<div class="service">
@@ -44,7 +56,13 @@
 					<div class="price">$50<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
-					<p>___</p>
+					<p>
+						IT business and software development questions fall in this package.
+						We can help you and your developers to understand each other better
+						- it's like a translator service, but for business. Also we can help
+						you with binding business goals to technical terms and measuring
+						results in sound fashion.
+					</p>
 				</div>
 			</div>
 		</div>
