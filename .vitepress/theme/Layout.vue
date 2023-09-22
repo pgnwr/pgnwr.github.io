@@ -8,6 +8,7 @@ import Logo from './pages/block/Logo.vue'
 import Services from './pages/block/Services.vue'
 import Crew from './pages/block/Crew.vue'
 import Footer from './pages/block/Footer.vue'
+import Modal from './pages/component/Modal.vue'
 </script>
 
 <template>
@@ -18,6 +19,8 @@ import Footer from './pages/block/Footer.vue'
       <Services/>
       <!-- <Crew/> -->
       <Footer/>
+      
     </div>
   <Content class="content"/>
+  <Modal/>
 </template>

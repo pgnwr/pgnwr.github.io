@@ -127,6 +127,13 @@ a:hover {
   margin-left: 2ch;
 } 
 
+.modal {
+  width: calc(100vw - 5ch);
+  margin-top: 2em;
+  height: calc(100vh - 7em);
+}
+
+
 
 }
 
@@ -163,6 +170,11 @@ a:hover {
   margin-left: 2ch;
 } 
 
+.modal {
+  width: 60ch;
+  margin-top: 4em;
+  height: calc(100vh - 8em);
+}
 
 }
 
@@ -206,6 +218,12 @@ a:hover {
         display: flex;
        
     } 
+
+    .modal {
+      width: 60ch;
+      margin-top: 12em;
+      height: 30em;
+    }
 }
 
 /* http://aleclownes.com/2017/02/01/crt-display.html */
