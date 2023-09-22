@@ -51,6 +51,19 @@ a:hover {
   color:  var(--pgnwr-bright);
 }
 
+.service {
+  cursor: pointer;
+}
+
+.service:hover > .title {
+  color:  var(--pgnwr-bright);
+}
+
+.service:hover > img {
+  filter: brightness(1.5);
+}
+
+
 #app {
   align-content: center;
   width: 100vw;

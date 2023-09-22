@@ -33,7 +33,7 @@
     }
 
     .footer > .legal {
-        /* display: flex; */
+        text-align: left;
         flex-direction: column;
         color: var(--pgnwr-dark); 
     } 
