@@ -19,7 +19,7 @@
 
 			<div class="service">
 				<div class="header">
-					<div class="title">Psychological consulting</div>
+					<div class="title">Consultation</div>
 					<div class="spacer"></div>
 					<div class="price">$35<img src="/icons/time.png" alt="/h" /></div>
 				</div>

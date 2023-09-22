@@ -51,7 +51,7 @@
 			</div>
 			<div class="service">
 				<div class="header">
-					<div class="title">Business consulting</div>
+					<div class="title">Consulting</div>
 					<div class="spacer"></div>
 					<div class="price">$50<img src="/icons/time.png" alt="/h" /></div>
 				</div>

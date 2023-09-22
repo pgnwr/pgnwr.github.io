@@ -131,7 +131,7 @@ const props = defineProps(["shown"]);
 	height: 2em;
 	margin-top: -0.5em;
 	margin-bottom: -0.5em;
-	margin-left: 1ch;
+	margin-left: 0.25ch;
 }
 
 .modal-cover,

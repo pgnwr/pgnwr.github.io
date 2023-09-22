@@ -95,6 +95,10 @@ a:active {
 	min-height: calc(var(--vh, 1vh) * 100 - 3em - 1px);
 }
 
+.content > p {
+	margin-bottom: 0;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 480px) {
 	#page {
@@ -194,8 +198,6 @@ a:active {
 	.modal {
 		width: 42ch;
 		margin-top: 6em;
-		max-height: calc(30em);
-		/* height: calc(var(--vh, 1vh) * 100 - 8em); */
 	}
 
 	.content > .header {
@@ -208,7 +210,8 @@ a:active {
 
 	.scrollable,
 	.scrollable > .content {
-		max-height: 24em;
+		max-height: calc(100vh - 14em);
+		max-height: calc(var(--vh, 1vh) * 100 - 14em);
 	}
 }
 
@@ -253,7 +256,7 @@ a:active {
 
 	.modal {
 		width: 60ch;
-		margin-top: 6em;
+		margin-top: 3em;
 		/* height: 30em; */
 	}
 
@@ -263,7 +266,8 @@ a:active {
 
 	.scrollable,
 	.scrollable > .content {
-		max-height: 26em;
+		max-height: calc(100vh - 9em);
+		max-height: calc(var(--vh, 1vh) * 100 - 9em);
 	}
 }
 

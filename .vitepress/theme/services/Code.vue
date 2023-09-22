@@ -48,7 +48,7 @@
 			</div>
 			<div class="service">
 				<div class="header">
-					<div class="title">Performance tuning and testing</div>
+					<div class="title">Performance tuning</div>
 					<div class="spacer"></div>
 					<div class="price">$50<img src="/icons/time.png" alt="/h" /></div>
 				</div>
