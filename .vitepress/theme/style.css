@@ -257,7 +257,7 @@ a:active {
 
 	.scrollable,
 	.scrollable > .content {
-		max-height: 20em;
+		max-height: 26em;
 	}
 }
 
