@@ -1,10 +1,12 @@
 {
-  "cSpell.words": [
-    "haxorville",
-    "Nageviciaus",
-    "Paganware",
-    "pgnwr",
-    "srvs",
-    "vitepress"
-  ]
+	"cSpell.words": [
+		"haxorville",
+		"Nageviciaus",
+		"Paganware",
+		"pgnwr",
+		"srvs",
+		"vitepress"
+	],
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true
 }

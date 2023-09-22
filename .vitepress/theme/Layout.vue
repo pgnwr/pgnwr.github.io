@@ -1,50 +1,53 @@
-<script setup lang="ts" >
-import { useData } from 'vitepress'
-// https://vitepress.dev/reference/runtime-api#usedata
-const { page, site, frontmatter } = useData()
-import {
-  defineComponent, onMounted, ref, reactive, nextTick, toRefs, watch,
-} from 'vue';
-
-import Logo from './pages/block/Logo.vue'
-// import Header from './pages/block/Header.vue'
-import Services from './pages/block/Services.vue'
-import Crew from './pages/block/Crew.vue'
-import Footer from './pages/block/Footer.vue'
-import Modal from './pages/component/Modal.vue'
+<script setup lang="ts">
+import { ref } from "vue";
+import Logo from "./pages/block/Logo.vue";
+import Services from "./pages/block/Services.vue";
+import Footer from "./pages/block/Footer.vue";
+import Code from "./services/Code.vue";
+import Manage from "./services/Manage.vue";
+import Mindfulness from "./services/Mindfulness.vue";
+import Speak from "./services/Speak.vue";
 
 let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-// We listen to the resize event
-window.addEventListener('resize', () => {
-  // We execute the same script as before
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+document.documentElement.style.setProperty("--vh", `${vh}px`);
+window.addEventListener("resize", () => {
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
 
 const codeShown = ref(false);
-const designShown = ref(false);
-const teamShown = ref(false);
+const manageShown = ref(false);
+const mindfulnessShown = ref(false);
 const languageShown = ref(false);
 </script>
 
 <template>
-    <div class="crt"></div>
-    <div id="page">
-      <Header/>
-      <Logo/>
-      <Services v-model:codeShown="codeShown" v-model:designShown="designShown" 
-      v-model:teamShown="teamShown" v-model:languageShown="languageShown"/>
-      <!-- <Crew/> -->
-      <Footer/>
-      
-    </div>
-  <Content class="content"/>
-  <div class="modal-cover" :class="{ shown: codeShown || designShown || teamShown || languageShown }" @click="codeShown = false; designShown = false; teamShown = false; languageShown = false;">  </div>
-  <Modal v-model:shown="codeShown"/>
-  <Modal v-model:shown="designShown"/>
-  <Modal v-model:shown="teamShown"/>
-  <Modal v-model:shown="languageShown"/>
+	<div class="crt"></div>
+	<div id="page">
+		<Logo />
+		<Services
+			v-model:codeShown="codeShown"
+			v-model:designShown="manageShown"
+			v-model:teamShown="mindfulnessShown"
+			v-model:languageShown="languageShown"
+		/>
+		<Footer />
+	</div>
+	<Content class="content" />
+	<div
+		class="modal-cover"
+		:class="{
+			shown: codeShown || manageShown || mindfulnessShown || languageShown,
+		}"
+		@click="
+			codeShown = false;
+			manageShown = false;
+			mindfulnessShown = false;
+			languageShown = false;
+		"
+	></div>
+	<Code v-model:shown="codeShown" />
+	<Manage v-model:shown="manageShown" />
+	<Mindfulness v-model:shown="mindfulnessShown" />
+	<Speak v-model:shown="languageShown" />
 </template>
