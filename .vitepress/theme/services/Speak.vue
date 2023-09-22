@@ -6,11 +6,7 @@
 		<div class="content">
 			<div class="header">
 				<div class="icon">
-					<img
-						src="../../../../assets/img/srvs/language.png"
-						style=""
-						alt="icon"
-					/>
+					<img src="/services/language.png" style="" alt="icon" />
 				</div>
 				<div class="description">
 					<div class="title">Language support</div>
@@ -25,32 +21,36 @@
 
 			<div class="service">
 				<div class="header">
-					<div class="title">Speaking</div>
+					<div class="title">Speech training</div>
 					<div class="spacer"></div>
-					<div class="price">
-						$25<img src="../../../../assets/img/icns/time.png" alt="/h" />
-					</div>
+					<div class="price">$25<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
 					<p>
-						If you want to boost your language, expand your vocabulary and
-						simply have fun in English!
+						Speak freely mate, we all are friends here. You need to expand your
+						vocabulary and make speech fluent, right? We provide personal speech
+						training and also work in small groups. We may guide you through
+						complex topics and work on your domain specific needs to make you
+						sound as old uncle Gunter who moved to US couple years back in a
+						matter of couple month. To pass C1 it'll take more time, but we can
+						work on it also.
 					</p>
 				</div>
 			</div>
 
 			<div class="service">
 				<div class="header">
-					<div class="title">Grammar</div>
+					<div class="title">Grammar classes</div>
 					<div class="spacer"></div>
-					<div class="price">
-						$25<img src="../../../../assets/img/icns/time.png" alt="/h" />
-					</div>
+					<div class="price">$25<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
 					<p>
-						If you struggle to understand grammar or just want to improve your
-						level
+						Struggle to understand grammar or just need to improve your level to
+						pass exam, we can help you on this one. Spend couple month with our
+						trainer and you'll hardly need to rely on Google Translate and will
+						be able to construct sentences without rewriting every one with
+						Gramarly.
 					</p>
 				</div>
 			</div>

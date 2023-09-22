@@ -6,7 +6,7 @@
 		<div class="content">
 			<div class="header">
 				<div class="icon">
-					<img src="../../../../assets/img/srvs/code.png" style="" alt="icon" />
+					<img src="/services/code.png" style="" alt="icon" />
 				</div>
 				<div class="description">
 					<div class="title">Software development</div>
@@ -20,9 +20,7 @@
 				<div class="header">
 					<div class="title">Code production</div>
 					<div class="spacer"></div>
-					<div class="price">
-						$40<img src="../../../../assets/img/icns/time.png" alt="/h" />
-					</div>
+					<div class="price">$40<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
 					<p>
@@ -37,9 +35,7 @@
 				<div class="header">
 					<div class="title">Software design</div>
 					<div class="spacer"></div>
-					<div class="price">
-						$60<img src="../../../../assets/img/icns/time.png" alt="/h" />
-					</div>
+					<div class="price">$60<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
 					<p>
@@ -54,9 +50,7 @@
 				<div class="header">
 					<div class="title">Performance tuning and testing</div>
 					<div class="spacer"></div>
-					<div class="price">
-						$50<img src="../../../../assets/img/icns/time.png" alt="/h" />
-					</div>
+					<div class="price">$50<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
 					<p>

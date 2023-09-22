@@ -6,11 +6,7 @@
 		<div class="content">
 			<div class="header">
 				<div class="icon">
-					<img
-						src="../../../../assets/img/srvs/manage.png"
-						style=""
-						alt="icon"
-					/>
+					<img src="/services/manage.png" style="" alt="icon" />
 				</div>
 				<div class="description">
 					<div class="title">Process management</div>
@@ -25,9 +21,7 @@
 				<div class="header">
 					<div class="title">Team gathering</div>
 					<div class="spacer"></div>
-					<div class="price">
-						$50<img src="../../../../assets/img/icns/time.png" alt="/h" />
-					</div>
+					<div class="price">$50<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
 					<p>___</p>
@@ -37,9 +31,7 @@
 				<div class="header">
 					<div class="title">Process setup</div>
 					<div class="spacer"></div>
-					<div class="price">
-						$50<img src="../../../../assets/img/icns/time.png" alt="/h" />
-					</div>
+					<div class="price">$50<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
 					<p>___</p>
@@ -49,9 +41,7 @@
 				<div class="header">
 					<div class="title">Business consulting</div>
 					<div class="spacer"></div>
-					<div class="price">
-						$50<img src="../../../../assets/img/icns/time.png" alt="/h" />
-					</div>
+					<div class="price">$50<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
 					<p>___</p>

@@ -3,6 +3,7 @@
 @font-face {
 	font-family: "haxorville";
 	src: url("/assets/fonts/haxorville.ttf") format("truetype");
+	src: url("/assets/fonts/haxorville.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -141,6 +142,7 @@ a:active {
 
 	.content > .header > .icon {
 		width: calc(100vw - 3ch);
+		margin-bottom: 1.5em;
 	}
 
 	.content > .header {
@@ -253,6 +255,10 @@ a:active {
 		width: 60ch;
 		margin-top: 6em;
 		/* height: 30em; */
+	}
+
+	.content > .service {
+		margin-top: 0.75em;
 	}
 
 	.scrollable,

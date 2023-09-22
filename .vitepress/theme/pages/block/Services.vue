@@ -17,22 +17,19 @@
 		<div class="heading">What service you need? <br /></div>
 		<div class="service-list">
 			<a class="service" @click="$emit('update:codeShown', true)">
-				<img src="../../../../assets/img/srvs/code.png" alt="Code" />
+				<img src="/services/code.png" alt="Code" />
 				<div class="title">Code</div>
 			</a>
 			<a class="service" @click="$emit('update:designShown', true)">
-				<img src="../../../../assets/img/srvs/manage.png" alt="Manage" />
+				<img src="/services/manage.png" alt="Manage" />
 				<div class="title">Manage</div>
 			</a>
 			<a class="service" @click="$emit('update:teamShown', true)">
-				<img
-					src="../../../../assets/img/srvs/mindfulness.png"
-					alt="Mindfulness"
-				/>
+				<img src="/services/mindfulness.png" alt="Mindfulness" />
 				<div class="title">Mindfulness</div>
 			</a>
 			<a class="service" @click="$emit('update:languageShown', true)">
-				<img src="../../../../assets/img/srvs/language.png" alt="Language" />
+				<img src="/services/language.png" alt="Language" />
 				<div class="title">Language</div>
 			</a>
 		</div>
@@ -84,7 +81,7 @@ function writeText(target, content, delay = 10) {
 				setTimeout(() => {
 					target.innerHTML += contentArray[curr];
 					// Scroll to the bottom of the screen unless scroll is false
-					window.scrollTo(0, document.body.scrollHeight);
+					// window.scrollTo(0, document.body.scrollHeight);
 
 					// Resolve the promise once the last character is written
 					if (curr === contentArray.length - 1) resolve();

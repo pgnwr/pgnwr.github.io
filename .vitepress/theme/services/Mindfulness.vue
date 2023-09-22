@@ -6,16 +6,12 @@
 		<div class="content">
 			<div class="header">
 				<div class="icon">
-					<img
-						src="../../../../assets/img/srvs/mindfulness.png"
-						style=""
-						alt="icon"
-					/>
+					<img src="/services/mindfulness.png" style="" alt="icon" />
 				</div>
 				<div class="description">
 					<div class="title">Team training</div>
 					<div class="summary">
-						Oh yes, I see now - your problem lays inside the domain of humans -
+						Oh yes, I see now - your problem lays inside domain of humans -
 						that's a common problem nowadays. Let's see what we can do for you.
 					</div>
 				</div>
@@ -23,11 +19,9 @@
 
 			<div class="service">
 				<div class="header">
-					<div class="title">Consultation</div>
+					<div class="title">Psychological consulting</div>
 					<div class="spacer"></div>
-					<div class="price">
-						$35<img src="../../../../assets/img/icns/time.png" alt="/h" />
-					</div>
+					<div class="price">$35<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
 					<p>
@@ -40,9 +34,7 @@
 				<div class="header">
 					<div class="title">Therapeutic tale</div>
 					<div class="spacer"></div>
-					<div class="price">
-						$100<img src="../../../../assets/img/icns/pack.png" alt="/h" />
-					</div>
+					<div class="price">$100<img src="/icons/pack.png" alt="/h" /></div>
 				</div>
 				<div class="content">
 					<p>
