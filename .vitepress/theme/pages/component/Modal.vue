@@ -49,25 +49,26 @@ const props = defineProps(["shown"]);
 
 <style>
 .modal-cover {
-	visibility: hidden;
-	transition: visibility 0s, opacity 0.5s ease-out;
+	transition: opacity 0.5s ease-out;
 	opacity: 0%;
 	pointer-events: none;
 }
 .modal-cover.shown {
-	visibility: visible;
 	opacity: 40% !important;
 	pointer-events: all;
 }
 .modal-handle {
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 0s, opacity 0.5s ease-out;
+	transition: opacity 0.7s ease-in-out;
+	-moz-transition: opacity 0.7s ease-in-out;
+	-webkit-transition: opacity 0.7s ease-in-out;
 	pointer-events: none;
 }
 .modal-handle.shown {
-	visibility: visible;
-	opacity: 1 !important;
+	opacity: 100%;
+}
+.modal-handle:not(.shown) {
+	height: 0px;
+	opacity: 0%;
 }
 
 .service > .header {
