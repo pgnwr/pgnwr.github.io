@@ -21,7 +21,7 @@
 				<div class="header">
 					<div class="title">Team gathering</div>
 					<div class="spacer"></div>
-					<div class="price">$50<img src="/icons/time.png" alt="/h" /></div>
+					<div class="price">$60<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
 					<p>
@@ -37,7 +37,7 @@
 				<div class="header">
 					<div class="title">Process setup</div>
 					<div class="spacer"></div>
-					<div class="price">$50<img src="/icons/time.png" alt="/h" /></div>
+					<div class="price">$70<img src="/icons/time.png" alt="/h" /></div>
 				</div>
 				<div class="content">
 					<p>
