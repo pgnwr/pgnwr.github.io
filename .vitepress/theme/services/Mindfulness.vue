@@ -11,7 +11,7 @@
 				<div class="description">
 					<div class="title">Team training</div>
 					<div class="summary">
-						Oh yes, I see now - your problem lays inside domain of humans -
+						Oh yes, I see now - your problem lays inside the domain of humans -
 						that's a common problem nowadays. Let's see what we can do for you.
 					</div>
 				</div>
@@ -48,7 +48,7 @@
 						right now?”. Consists of three parts: lead-in consultation (40 mins)
 						to formulate the request; the Journey itself (2-3 hours, depends on
 						the length of the story and client's speed); the end product:
-						personal story digital booklet for your to keep.
+						personal story digital booklet for you to keep.
 					</p>
 				</div>
 			</div>

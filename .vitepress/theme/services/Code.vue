@@ -11,8 +11,8 @@
 				<div class="description">
 					<div class="title">Software development</div>
 					<div class="summary">
-						Need some software be ready quick? Or you need someone to code
-						solution for you? Worry not we are hear to help.
+						Need some software be ready quick? Or do you need someone to code
+						the solution for you? Worry not, we are here to help.
 					</div>
 				</div>
 			</div>
@@ -27,7 +27,7 @@
 						As simple as it is, you decide which tech to use. We are comfortable
 						with any Java version, ECMAScript and TypeScript, also we have
 						experience with Groovy, Ruby, Python, C, C++ and many more. We'll be
-						you steady hands on this one.
+						your steady hands on this one.
 					</p>
 				</div>
 			</div>
@@ -39,9 +39,9 @@
 				</div>
 				<div class="content">
 					<p>
-						Have trouble with architecture or need to split good-old monolith.
-						Just tell us what's need to be done and we'll deliver solution. We
-						may provide full spectrum of services from initial requirement
+						Have trouble with architecture or need to split good-old monolith?
+						Just tell us what's need to be done and we'll deliver the solution.
+						We may provide full spectrum of services from initial requirement
 						gathering to setting up production deployment pipe-line.
 					</p>
 				</div>
@@ -55,7 +55,7 @@
 				<div class="content">
 					<p>
 						Feel a little bit nervous before rolling out big update or
-						experience performance issues somewhere in the system - no problem,
+						experience performance issues somewhere in the system? No problem,
 						we can design and develop additional instrumentation for you.
 					</p>
 				</div>

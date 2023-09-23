@@ -13,7 +13,7 @@
 					<div class="summary">
 						So you think you'll need help with management side of things. Very
 						well, setting up development process inside organization or pivoting
-						is a big step, but we'll be glad to help you in this journey.
+						is a big step, but we'll be glad to help you on this journey.
 					</div>
 				</div>
 			</div>
@@ -25,11 +25,11 @@
 				</div>
 				<div class="content">
 					<p>
-						Need a team, but have non at the moment, or you are looking for
+						Need a team, but have none at the moment, or you are looking for
 						assistance in expanding team - good, we have service right for you.
 						From interview preparation and setup, to on-boarding design and
 						culture-fostering events - we can do it all. Also we can shadow
-						teams and provide you with insights and develop improvement plan.
+						teams and provide you with insights and develop an improvement plan.
 					</p>
 				</div>
 			</div>
@@ -42,10 +42,10 @@
 				<div class="content">
 					<p>
 						Modern development process hardly resembles general processes inside
-						company, due to many technological and cultural shifts lately. But
-						we can help you to develop processes, setup guidelines and standards
-						for teams to follow - this also implies working with team directly
-						to ensure alignment.
+						company due to many technological and cultural shifts lately. But we
+						can help you develop processes, setup guidelines and standards for
+						teams to follow - this also implies working with team directly to
+						ensure alignment.
 					</p>
 				</div>
 			</div>
@@ -58,8 +58,8 @@
 				<div class="content">
 					<p>
 						IT business and software development questions fall in this package.
-						We can help you and your developers to understand each other better
-						- it's like a translator service, but for business. Also we can help
+						We can help you and your developers understand each other better -
+						it's like a translator service, but for business. Also we can help
 						you with binding business goals to technical terms and measuring
 						results in sound fashion.
 					</p>

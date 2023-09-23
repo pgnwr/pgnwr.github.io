@@ -12,9 +12,9 @@
 					<div class="title">Language support</div>
 					<div class="summary">
 						Oy mate! You need to practice to get ready for new exciting job, or
-						it's just a general quarter report for C-suite - feel that your
-						English is a little bit rusty. Worry not you found service you've
-						been looking for
+						it's just a general quarter report for C-suite and you feel that
+						your English is a little bit rusty? Worry not: you found service
+						you've been looking for!
 					</div>
 				</div>
 			</div>
@@ -33,7 +33,7 @@
 						complex topics and work on your domain specific needs to make you
 						sound as old uncle Gunter who moved to US couple years back in a
 						matter of couple month. To pass C1 it'll take more time, but we can
-						work on it also.
+						work on this too.
 					</p>
 				</div>
 			</div>
@@ -47,10 +47,10 @@
 				<div class="content">
 					<p>
 						Struggle to understand grammar or just need to improve your level to
-						pass exam, we can help you on this one. Spend couple month with our
-						trainer and you'll hardly need to rely on Google Translate and will
-						be able to construct sentences without rewriting every one with
-						Gramarly.
+						pass the exam? We can help you on this one. Spend couple months with
+						our trainer and you'll hardly need to rely on Google Translate and
+						will be able to construct sentences without rewriting every one with
+						Grammarly.
 					</p>
 				</div>
 			</div>
