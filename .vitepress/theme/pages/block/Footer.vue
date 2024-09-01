@@ -4,7 +4,7 @@
         <div class="divider">  </div>
     <div class="legal"> 
         Paganware, MB (306354553)<br/>
-        Taikos pr. 24-13, Klaipėda
+        Taikos pr. 24-13, Klaipeda
     </div>
     <div class='spacer'>
     </div>
