@@ -4,7 +4,7 @@
         <div class="divider">  </div>
     <div class="legal"> 
         Paganware, MB (306354553)<br/>
-        V. Nageviciaus g. 3, Vilnius
+        Taikos pr. 24-13, Klaipėda
     </div>
     <div class='spacer'>
     </div>
